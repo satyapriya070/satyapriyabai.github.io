@@ -58,7 +58,7 @@ const validate=()=>{
     //validate username
 
     if (usernameVal === "") {
-        setErrorMsg(username, 'username cannot be blank');
+        setErrorMsg(username, 'username can not be blank');
     } else if (usernameVal.length <= 2) {
         setErrorMsg(username, 'username min 3 char');
     } else {
@@ -67,7 +67,7 @@ const validate=()=>{
 
     //validate email
     if (emailVal === "") {
-        setErrorMsg(email, 'email cannot be blank');
+        setErrorMsg(email, 'email can not be blank');
     } else if (!isEmail(emailVal)) {
         setErrorMsg(email, 'Not a valid Email');
     } else {
@@ -76,7 +76,7 @@ const validate=()=>{
 
     //validate phone
     if (phoneVal === "") {
-        setErrorMsg(phone, 'phone cannot be blank');
+        setErrorMsg(phone, 'phone can not be blank');
     } else if (phoneVal.length != 10) {
         setErrorMsg(phone, 'Not a valid phone num');
     } else {
@@ -85,7 +85,7 @@ const validate=()=>{
 
       //validate password
       if (passwordVal === "") {
-        setErrorMsg(password, 'password cannot be blank');
+        setErrorMsg(password, 'password can not be blank');
     } else if (passwordVal.length <= 5) {
         setErrorMsg(password, 'Minimum 6 char');
     } else {
@@ -94,7 +94,7 @@ const validate=()=>{
 
      //validate cpassword
      if (cpasswordVal === "") {
-        setErrorMsg(cpassword, 'confirm password cannot be blank');
+        setErrorMsg(cpassword, 'confirm password');
     } else if (passwordVal !== cpasswordVal) {
         setErrorMsg(cpassword, 'password are not matching');
     } else {
